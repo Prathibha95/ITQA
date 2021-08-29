@@ -1,0 +1,66 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test Suite" verbose="1" >
+    <test name="testng.annotation" >
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <exclude name="reg"></exclude>
+            </run>
+        </groups>
+        <classes>
+<!--            <class name="testng.annotation.TestNgTest1" />-->
+<!--            <class name="testng.annotation.TestNgTest2" />-->
+<!--            <class name="testng.annotation.TestNgTest3" />-->
+<!--            <class name="testng.annotation.TestNgTest4" />-->
+            <!--
+        Before Method
+        Test 1
+        After Method
+        Before Method
+        Test 1
+        After Method
+        Before Method
+        Test 2
+        After Method
+        Before Class
+        Before Method
+        Test 1
+        After Method
+        Before Method
+        Test 2
+        After Method
+        After Class-->
+            <!--
+            smog test = testing critical parts = sanity test-->
+            <class name="groups.GroupsTest1" />
+            <class name="groups.GroupsTest2" />
+            <class name="groups.GroupsTest3" />
+<!--include smoke only (6)-->
+<!--            GT1_1-->
+<!--            GT1_4-->
+<!--            GT2_2-->
+<!--            GT2_3-->
+<!--            GT3_1-->
+<!--            GT3_5-->
+<!--include smoke and reg(10) -->
+<!--            GT1_1-->
+<!--            GT1_2-->
+<!--            GT1_4-->
+<!--            GT2_1-->
+<!--            GT2_2-->
+<!--            GT2_3-->
+<!--            GT3_1-->
+<!--            GT3_3-->
+<!--            GT3_4-->
+<!--            GT3_5-->
+<!--*********** best practise:: is grouping test cases ************-->
+
+<!--include smoke exclude reg-->
+<!--            GT1_4-->
+<!--            GT2_2-->
+<!--            GT3_5-->
+        </classes>
+    </test>
+
+</suite>
